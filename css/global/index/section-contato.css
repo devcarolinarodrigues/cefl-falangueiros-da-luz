@@ -1,0 +1,65 @@
+/* Container que organiza os cartões */
+.contatos-container {
+    display: flex;
+    flex-wrap: wrap; /* Faz os cartões quebrarem de linha no celular */
+    gap: 20px;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Estilo de cada cartão de contato */
+.contato-card {
+    background-color: #252525;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    min-width: 280px;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.contato-card:hover {
+    background-color: #2a2a2a;
+    border-color: #d4af37;
+    transform: translateY(-5px); 
+}
+
+.contato-icone {
+    font-size: 2rem; 
+    color: #d4af37; 
+    width: 40px;    
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.contato-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-label {
+    color: #d4af37;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contato-user {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 3px;
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 768px) {
+    .contato-card {
+        width: 100%; /* No celular, cada cartão ocupa a largura toda */
+    }
+}

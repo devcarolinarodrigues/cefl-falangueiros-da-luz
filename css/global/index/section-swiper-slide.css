@@ -1,0 +1,53 @@
+/* Container principal */
+.mySwiper {
+  margin-top: 20px; 
+}
+
+:root {
+  --swiper-navigation-size: 25px; 
+  --swiper-theme-color: #f1c40f; 
+}
+
+.swiper {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 20px auto; 
+  padding: 20px 0 60px 0; 
+  overflow: hidden; 
+}
+
+/* Ajuste para o novo elemento semanticamente correto */
+.swiper-slide figure {
+  margin: 0; /* Remove margens padrão do <figure> */
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 450px; /* Altura para celular */
+  aspect-ratio: 9 / 16;
+  object-fit: cover; 
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  display: block; /* Remove espaços vazios abaixo da imagem */
+}
+
+/* Legendas (opcional, caso use <figcaption>) */
+.swiper-slide figcaption {
+  margin-top: 10px;
+  font-family: sans-serif;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Ajuste para Computador (Telas maiores que 768px) */
+@media (min-width: 768px) {
+  .swiper-slide img {
+    height: 550px; /* Altura no PC */
+  }
+}
