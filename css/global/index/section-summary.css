@@ -1,4 +1,4 @@
-/* Tira a setinha padrão do navegador e coloca o nosso estilo */
+
 summary {
     list-style: none;
     font-weight: bold;
@@ -13,7 +13,7 @@ summary::-webkit-details-marker {
     display: none;
 }
 
-/* Criando o ícone de + antes do texto */
+
 summary::before {
     content: '+';
     color: #d4af37;
@@ -22,23 +22,23 @@ summary::before {
     transition: transform 0.3s;
 }
 
-/* A seção ocupa toda a largura, mas centraliza o que estiver dentro dela */
+
 .regras-secao {
     width: 100%;
     display: flex;
-    justify-content: center; /* Centraliza o container horizontalmente */
+    justify-content: center; 
     padding: 50px 0;
 }
 
-/* O container limita a largura e centraliza o texto */
+
 .regras-container {
     width: 100%;
-    max-width: 1100px; /* Mesma largura das outras seções para alinhar tudo */
-    margin: 0 auto;    /* Garante a centralização */
-    padding: 0 20px;   /* Respiro lateral para telas de celular */
+    max-width: 1100px; 
+    margin: 0 auto;    
+    padding: 0 20px;   
 }
 
-/* Centraliza o título especificamente */
+
 .regras-container h3 {
     text-align: center;
     color: #d4af37;
@@ -46,19 +46,19 @@ summary::before {
     width: 100%;
 }
 
-/* Garante que cada item ocupe a largura total do container centralizado */
+
 details {
     width: 100%;
-    border-bottom: 1px solid #333; /* Opcional: linha para separar os itens */
+    border-bottom: 1px solid #333; 
     margin-bottom: 5px;
 }
 
-/* Quando o item está aberto, o + vira um - */
+
 details[open] summary::before {
     content: '-';
     color: #d4af37;
 }
-/* Estilo do conteúdo que aparece ao abrir */
+
 .content {
     padding: 15px 0 10px 35px;
     color: #ccc;
@@ -69,32 +69,32 @@ details[open] summary::before {
     margin-bottom: 10px;
 }
 
-/* Container de contato mais discreto */
+
 .contato-container {
     margin-top: 15px;
     padding-top: 10px;
-    border-top: 1px solid #333; /* Uma linha bem fininha para separar do texto acima */
+    border-top: 1px solid #333; 
 }
 
 .contato-container strong {
-    color: #fff; /* "Contato para jogo:" em branco */
+    color: #fff; 
     font-weight: 600;
 }
 
-/* O Link personalizado */
+
 .contato-container a {
-    color: #d4af37; /* Dourado do seu site */
-    text-decoration: none; /* Remove o sublinhado padrão */
+    color: #d4af37; 
+    text-decoration: none; 
     font-weight: bold;
     margin-left: 5px;
     text-transform: uppercase;
     font-size: 0.9rem;
-    letter-spacing: 1px; /* Espaçamento entre letras para dar um ar mais moderno */
+    letter-spacing: 1px; 
     transition: color 0.3s ease;
 }
 
-/* Efeito ao passar o mouse */
+
 .contato-container a:hover {
-    color: #f1c40f; /* Muda para um dourado mais claro */
-    text-decoration: underline; /* A linha só aparece quando o mouse está em cima */
+    color: #f1c40f; 
+    text-decoration: underline; 
 }
