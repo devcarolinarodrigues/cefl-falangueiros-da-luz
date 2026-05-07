@@ -40,19 +40,6 @@
 }
 
 
-
-.agenda-item.destaque {
-    border-left: 4px solid #d4af37;
-    background-color: #222;
-}
-
-.agenda-item.destaque .evento {
-    font-style: italic;
-    color: #f5f5f5; 
-    opacity: 0.9;
-}
-
-
 details {
     border-bottom: 1px solid #333;
     padding: 15px 0;
